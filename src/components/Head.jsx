@@ -64,7 +64,7 @@ const Head = () => {
     dispatch(toggleMenu());
   };
   return (
-    <div className="grid grid-flow-col w-full p-3  fixed  top-0 bg-white z-10">
+    <div className="grid grid-flow-col w-full p-3  fixed  top-0 bg-white z-80">
       <div className="flex col-span-3 ">
         <img
           onClick={toggleMenuHandler}
@@ -91,7 +91,7 @@ const Head = () => {
             onFocus={() => setShowSuggestions(true)}
             onBlur={() => setTimeout(() => setShowSuggestions(false), 10)}
           />
-          <button className="border border-gray-400 p-1 px-6 bg-gray-100 rounded-r-full">
+          <button className="border border-gray-400 p-1 px-6 bg-gray-100 rounded-r-full hover:bg-gray-300">
             🔍
           </button>
         </div>

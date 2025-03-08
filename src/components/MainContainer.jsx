@@ -8,7 +8,7 @@ const MainContainer = () => {
   return (
     <div className={`flex mt-[4rem]`}>
       <div
-       className={`w-full ${isMenuOpen ? "ml-[15rem]" : "ml-0"} `}>
+       className={`w-full ${isMenuOpen ? "ml-[15rem]" : "ml-2"} `}>
         <ButtonList />
         <VideoContainer />
       </div>
