@@ -27,6 +27,63 @@ const commentData = [
                     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
                     replies: [],
                   },
+                  {
+                    name: "Akshay Shahane",
+                    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+                    replies: [],
+                  },
+                  {
+                    name: "Akshay Shahane",
+                    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+                    replies: [
+                      {
+                        name: "Akshay Shahane",
+                        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+                        replies: [],
+                      },
+                      {
+                        name: "Akshay Shahane",
+                        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+                        replies: [
+                          {
+                            name: "Akshay Shahane",
+                            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+                            replies: [],
+                          },
+                          {
+                            name: "Akshay Shahane",
+                            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+                            replies: [],
+                          },
+                        ],
+                      },
+                      {
+                        name: "Akshay Shahane",
+                        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+                        replies: [],
+                      },
+                      {
+                        name: "Akshay Shahane",
+                        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+                        replies: [],
+                      },
+                    ],
+                  },
+                  {
+                    name: "Akshay Shahane",
+                    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+                    replies: [],
+                  },
+                  {
+                    name: "Akshay Shahane",
+                    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+                    replies: [],
+                  },
+                  {
+                    name: "Akshay Shahane",
+                    text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+                    replies: [],
+                  },
                 ],
               },
             ],
