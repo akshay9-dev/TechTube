@@ -9,7 +9,7 @@ const SideBar = () => {
   //   if (!isMenuOpen) return null; //This is same as below
 
   return !isMenuOpen ? null : (
-    <div className=" fixed top-[4rem] left-0 h-[calc(100vh-3rem)] px-5 py-2 w-61  overflow-y-hidden hover:overflow-y-auto bg-white ">
+    <div className=" fixed top-[3rem] left-0 h-[calc(100vh-3rem)] px-5 pt-3 py-2 w-61  overflow-y-hidden hover:overflow-y-auto bg-white ">
       <div>
         <h1 className="py-2 hover:bg-gray-200 rounded-lg">
           <span className="px-2 text-sm">🏠</span>

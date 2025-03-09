@@ -18,7 +18,7 @@ const VideoContainer = () => {
   };
 
   return (
-    <div className="flex flex-wrap pt-15">
+    <div className="flex flex-wrap overflow-hidden pt-10 ">
       {videos.map((video) => (
         <Link key={video.id} to={"/watch?v=" + video.id}>
           <VideoCard info={video} />

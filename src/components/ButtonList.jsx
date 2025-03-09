@@ -27,15 +27,15 @@ const ButtonList = () => {
 
   return (
     <div
-      className={`fixed top-[3.5rem] pb-2 pt-4 left-3 bg-white z-40 transition-all duration-300 ${
-        isMenuOpen ? "w-[calc(100%-15rem)] ml-[15rem]" : "w-full ml-1 "
+      className={`fixed top-[3.5rem] pb-2 pt-4 px-2 left-1 bg-white z-40 transition-all duration-300 ${
+        isMenuOpen ? "w-[calc(100%-15rem)] ml-[15rem]" : "w-full ml-1"
       }`}>
       <Splide
         options={{
           type: "slide",
-          perPage: 8, // Number of visible buttons
+          perPage: isMenuOpen ? 9 : 12, // Number of visible buttons
           perMove: 3, // Move this many buttons at a time
-          gap: "1px", // Space between buttons
+          gap: "", // Space between buttons
           pagination: false, // Hide pagination dots
           arrows: true, // Show navigation arrows
           drag: "free", // Allow free dragging
@@ -48,9 +48,9 @@ const ButtonList = () => {
             480: { perPage: 3 },
           },
         }}
-        className=" px-5 -ml-4 mr-4 ">
+        className=" px-10 -ml-4 -mr-2 ">
         {categories.map((category, index) => (
-          <SplideSlide key={index} className="flex justify-center pr-6">
+          <SplideSlide key={index} className="flex justify-center pr-1">
             <Button name={category} />
           </SplideSlide>
         ))}
