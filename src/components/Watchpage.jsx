@@ -46,7 +46,7 @@ const WatchPage = () => {
             <div className="mt-2">
               <h1 className="text-lg font-bold mb-2">{title}</h1>
               <div className="flex">
-                <p className="text-lg py-2">{channelTitle}</p>
+                <p className="text-lg py-2">🔔 {channelTitle}</p>
                 <button className="ml-5 px-4 py-1.5 border-1 bg-black rounded-full text-white">
                   {" "}
                   Subscribe
