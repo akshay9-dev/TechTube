@@ -21,14 +21,14 @@ const LiveChat = () => {
           message: makeRandomMessage(20),
         })
       );
-    }, 500);
+    }, 1000);
 
     return () => clearInterval(i);
   }, []);
 
   return (
     <>
-      <div className=" h-[560px] mx-4 p-1 border-2 border-black bg-gray-100 rounded-lg overflow-y-scroll flex flex-col-reverse">
+      <div className=" h-[560px] mx-4 p-2 border border-black bg-gray-100 rounded-lg overflow-y-scroll flex flex-col-reverse">
         <div>
           {
             //Disclaimer: Dont use index as key
@@ -40,7 +40,7 @@ const LiveChat = () => {
       </div>
 
       <form
-        className="max-w-full p-2 mx-4 border flex  border-black"
+        className="max-w-full p-2 mx-4 border flex rounded border-black"
         onSubmit={(e) => {
           e.preventDefault();
           console.log("sumbit", liveMessage);

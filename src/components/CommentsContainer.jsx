@@ -136,7 +136,7 @@ const CommentsList = ({ comments }) => {
     <div key={index}>
       <Comment data={comment} />
       {comment.replies?.length > 0 && ( // ✅ Only render replies if they exist
-        <div className="pl-5 border-l-2 border-black ml-5">
+        <div className="pl-5 pb-5 border-l-1 border-black ml-5">
           <CommentsList comments={comment.replies} />
         </div>
       )}

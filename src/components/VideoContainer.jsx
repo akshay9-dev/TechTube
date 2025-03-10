@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { YOUTUBE_VIDEO_API } from "../../utils/constants";
 import VideoCard from "./VideoCard";
 import { Link } from "react-router-dom";
-import WatchPage from "./Watchpage";
+import { addVideos } from "../../utils/videoSlice";
+import { useDispatch } from "react-redux";
 
 const VideoContainer = () => {
   const [videos, setVideos] = useState([]);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     getVideos();
@@ -14,8 +16,10 @@ const VideoContainer = () => {
   const getVideos = async () => {
     const data = await fetch(YOUTUBE_VIDEO_API);
     const json = await data.json();
-    console.log(json);
+    console.log(json.items);
     setVideos(json.items);
+
+    dispatch(addVideos(json.items));
   };
 
   return (
@@ -23,7 +27,6 @@ const VideoContainer = () => {
       {videos.map((video) => (
         <Link key={video.id} to={"/watch?v=" + video.id}>
           <VideoCard info={video} />
-          {/* <WatchPage info={video} /> */}
         </Link>
       ))}
     </div>
